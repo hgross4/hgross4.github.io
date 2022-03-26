@@ -1,5 +1,5 @@
 const queryUrl =
-    "http://api.npr.org/query?fields=title,audio&date=current&dateType=story&sort=assigned&output=json&numResults=30&apiKey=MDA5NDM4NDA3MDEzMzY1MTMyNjA2NjIyMg001&id=";
+    "https://api.npr.org/query?fields=title,audio&date=current&dateType=story&sort=assigned&output=json&numResults=30&apiKey=MDA5NDM4NDA3MDEzMzY1MTMyNjA2NjIyMg001&id=";
 
 function getStoryUrls(showId) {
     track_list = [];
