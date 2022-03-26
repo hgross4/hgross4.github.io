@@ -25,11 +25,19 @@ function parseStoryInfo(storyData) {
     storyDataJson = JSON.parse(storyData);
     const stories = storyDataJson.list.story;
     for (story of stories) {
-        let trackObject = {
-            name: story.title.$text,
-            path: story.audio[0].format.mp4.$text
+        try {
+            const name = story.title.$text ? story.title.$text : '';
+            const url = story.audio[0].format.mp4.$text;
+            if (url) {
+                const trackObject = {
+                    name: name,
+                    path: url
+                }
+                track_list.push(trackObject);
+            }
+        } catch (e) {
+            console.log(e);
         }
-        track_list.push(trackObject);
     }
     console.log(track_list);
     loadTrack(track_index);
