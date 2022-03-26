@@ -87,7 +87,7 @@ function nextTrack() {
 function prevTrack() {
   if (track_index > 0)
     track_index -= 1;
-  else track_index = track_list.length;
+  else track_index = track_list.length - 1;
   loadTrack(track_index);
   playTrack();
 }
