@@ -6,7 +6,6 @@ body {
 }
 
 .player {
-  height: 95vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -18,7 +17,6 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 25px;
 }
 
 .track-art {
@@ -42,15 +40,21 @@ body {
   font-size: 1.5rem;
 }
 
-.buttons {
+.get-stories-buttons {
+  padding: 50px;
+  text-align: center;
+}
+
+.player-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 button {
-  margin:0 auto;
-  display:block;
+  display:inline-block;
+  width: 25%;
+  height: 50px;
 }
 
 .playpause-track, .prev-track, .next-track {

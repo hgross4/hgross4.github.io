@@ -39,6 +39,5 @@ function parseStoryInfo(storyData) {
             console.log(e);
         }
     }
-    console.log(track_list);
     loadTrack(track_index);
 }
