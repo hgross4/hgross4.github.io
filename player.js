@@ -65,30 +65,30 @@ Player.prototype = {
           requestAnimationFrame(self.step.bind(self));
 
           // Start the wave animation if we have already loaded
-          wave.container.style.display = 'block';
+          // wave.container.style.display = 'block';
           bar.style.display = 'none';
           pauseBtn.style.display = 'block';
         },
         onload: function () {
           // Start the wave animation.
-          wave.container.style.display = 'block';
+          // wave.container.style.display = 'block';
           bar.style.display = 'none';
           loading.style.display = 'none';
         },
         onend: function () {
           // Stop the wave animation.
-          wave.container.style.display = 'none';
+          // wave.container.style.display = 'none';
           bar.style.display = 'block';
           self.skip('next');
         },
         onpause: function () {
           // Stop the wave animation.
-          wave.container.style.display = 'none';
+          // wave.container.style.display = 'none';
           bar.style.display = 'block';
         },
         onstop: function () {
           // Stop the wave animation.
-          wave.container.style.display = 'none';
+          // wave.container.style.display = 'none';
           bar.style.display = 'block';
         },
         onseek: function () {
