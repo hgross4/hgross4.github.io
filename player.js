@@ -66,13 +66,13 @@ Player.prototype = {
 
           // Start the wave animation if we have already loaded
           // wave.container.style.display = 'block';
-          bar.style.display = 'none';
+          // bar.style.display = 'none';
           pauseBtn.style.display = 'block';
         },
         onload: function () {
           // Start the wave animation.
           // wave.container.style.display = 'block';
-          bar.style.display = 'none';
+          // bar.style.display = 'none';
           loading.style.display = 'none';
         },
         onend: function () {
@@ -183,7 +183,6 @@ Player.prototype = {
    * @param  {Number} val Volume between 0 and 1.
    */
   volume: function (val) {
-    var self = this;
 
     // Update the global volume (affecting all Howls).
     Howler.volume(val);
@@ -205,9 +204,7 @@ Player.prototype = {
     var sound = self.playlist[self.index].howl;
 
     // Convert the percent into a seek position.
-    if (sound.playing()) {
-      sound.seek(sound.duration() * per);
-    }
+    sound.seek(sound.duration() * per);
   },
 
   /**
@@ -290,7 +287,7 @@ function loadPlayer() {
   nextBtn.addEventListener('click', function () {
     player.skip('next');
   });
-  waveform.addEventListener('click', function (event) {
+  bar.addEventListener('click', function (event) {
     player.seek(event.clientX / window.innerWidth);
   });
   playlistBtn.addEventListener('click', function () {
