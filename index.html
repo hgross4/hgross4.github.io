@@ -10,9 +10,9 @@
 
 <body>
   <!-- Top Info -->
-  <div class="get-stories-buttons">
-    <button onclick="getStoryUrls(3)">Morning Edition</button>
-    <button onclick="getStoryUrls(2)">All Things Considered</button>
+  <div id="get-stories-buttons-container">
+    <button class="get-stories-buttons" onclick="getStoryUrls(3)">Morning Edition</button>
+    <button class="get-stories-buttons" onclick="getStoryUrls(2)">All Things Considered</button>
   </div>
   <div id="title">
     <span id="track"></span>
@@ -40,6 +40,7 @@
 
   <!-- Playlist -->
   <div id="playlist">
+    <div class="list-song">CLOSE LIST</div>
     <div id="list"></div>
   </div>
 
