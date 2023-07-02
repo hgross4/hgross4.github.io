@@ -30,7 +30,7 @@ button {
 
 /* Top Info */
 #get-stories-buttons-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -254,7 +254,7 @@ button {
 }
 .list-song {
   width: 100%;
-  height: 45px;
+  height: 90px;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
